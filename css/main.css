@@ -54,7 +54,7 @@ header h1 {
 .project-manager {
   grid-area: r2;
   /* border: 2px solid rgb(50, 194, 7); */
-  margin: -2em 0;
+  margin: -1.5em 0;
 }
 
 #menu-bar {
@@ -89,7 +89,7 @@ header h1 {
 }
 
 #bar3 {
-  height: 5px;
+  height: 3px;
   width: 50%;
   background-color: var(--Royal-blue);
   transform: translateY(12px);
@@ -98,55 +98,127 @@ header h1 {
 
 .main-back {
   width: 100%;
-  height: 80vh;
   background-color: var(--Dark-beige);
   /* border: 3px solid rgb(212, 119, 119); */
+  display: flex;
   margin-top: 20vh;
-  display: block;
-  position: absolute;
+  padding-top: 30vh;
+  flex-direction: column;
 }
 
-.main-back h1 {
-  position: absolute;
-  top: 50%;
-  left: 2em;
-  /*left: 10%; */
+.containt-back {
+  padding: 0 2em;
+}
+.containt-back h1 {
   font-size: 3em;
-  font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
 
+.contact-info-main-back {
+  background-color: white;
+  display: grid;
+  grid-template-areas:
+    "e1 e2"
+    "e3 e4"
+    "e5 e5"
+    "e6 e6";
+  width: 100%;
+  gap: 0em;
+  padding: 1em 1em;
+}
+
+.contact-info-main-back {
+  padding: 1em;
+}
+
+.titles-footers {
+  font-size: 1.5em;
+  font-weight: bold;
+}
 .main-front {
   z-index: 1;
   width: 90%;
-  height: 80%;
+  height: 50vh;
   background-color: var(--Light-beige);
   position: absolute;
-  margin-top: -25vh;
-  margin-left: 2em;
+  top: 60vh;
+  margin-top: -46vh;
+  margin-left: 1em;
   /* opacity: 0.5; */
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
   display: flex;
-  justify-content: center;
-  border: 2px solid blue;
   flex-direction: column;
+  /* border: 2px solid blue; */
 }
 
 .main-front img {
   width: 50%;
   border-radius: 50%;
-  align-self: start;
-  margin-top: 2em;
-  font-family: "Poppins", sans-serif;
+  align-self: center;
+  margin-top: 1em;
+  border: 2px solid red;
 }
 
-.main-front h1 {
-  font-size: 2em;
+.name-in-main-front {
   width: 30%;
+  font-family: "Poppins", sans-serif;
   text-align: center;
-  border: 2px solid red;
-  float: right;
+  align-self: center;
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.line-in-main-front {
+  width: 25%;
+  height: 0.1em;
+  background-color: #0150fd;
+  align-self: center;
+  margin-top: 1em;
+}
+
+.buttons-main-front {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* background-color: #a5a6a8; */
+}
+.btn-resume,
+.btn-projects {
+  background-color: var(--Royal-blue);
+  color: white;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  margin-top: 2em;
+  border: 0;
+  align-self: center;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 400;
+  width: 40%;
+}
+
+.btn-projects {
+  color: black;
+  background-color: var(--Light-beige);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.media-logos-main-front {
+  position: absolute;
+  background-color: white;
+  height: 3em;
+  /* border: 2px solid red; */
+  bottom: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.media-logos-main-front i {
+  width: 2em;
+  align-self: center;
 }
