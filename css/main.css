@@ -6,9 +6,130 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 /* font-family: 'Quicksand', sans-serif; */
+
+:root {
+  --Dark-beige: #e6dacd;
+  --Light-beige: #f4ece6;
+  --Royal-blue: #0150fd;
+  --Black: #000;
+  --White: #fff;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: "Quicksand", sans-serif;
 }
-/* Dont' forget to link this file to your HTML in the <head> */
+
+header {
+  font-family: "Poppins", sans-serif;
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-areas:
+    "r1  l1"
+    "r2 l1";
+  justify-content: space-between;
+  margin: 0 1em;
+}
+
+.logo-and-name {
+  grid-area: r1;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  background-color: var(--Royal-blue);
+  width: 5vw;
+  height: 5vw;
+  /* border: 2px solid rgb(175, 146, 146); */
+  align-self: center;
+}
+
+header h1 {
+  /* border: 2px solid rgb(44, 4, 4); */
+  font-size: 1.5rem;
+}
+
+.project-manager {
+  grid-area: r2;
+  /* border: 2px solid rgb(50, 194, 7); */
+  margin: -2em 0;
+}
+
+#menu-bar {
+  grid-area: l1;
+  /* border: 3px solid red; */
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#menu {
+  width: 30px;
+  height: 50px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+  display: block;
+  /* border: 3px solid rgb(212, 119, 119); */
+}
+
+#bar1 {
+  height: 3px;
+  width: 50%;
+  background-color: var(--Royal-blue);
+  align-self: left;
+}
+#bar2 {
+  height: 3px;
+  width: 100%;
+  background-color: var(--Royal-blue);
+  align-self: center;
+  transform: translateY(6px);
+}
+
+#bar3 {
+  height: 5px;
+  width: 50%;
+  background-color: var(--Royal-blue);
+  transform: translateY(12px);
+  float: right;
+}
+
+.main-back {
+  width: 100%;
+  height: 80vh;
+  background-color: var(--Dark-beige);
+  /* border: 3px solid rgb(212, 119, 119); */
+  margin-top: 20vh;
+  display: block;
+  position: absolute;
+}
+
+.main-back h1 {
+  position: absolute;
+  top: 50%;
+  left: 2em;
+  /*left: 10%; */
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.main-front {
+  z-index: 1;
+  width: 90%;
+  height: 80%;
+  background-color: var(--Light-beige);
+  position: absolute;
+  margin-top: -25vh;
+  margin-left: 2em;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* opacity: 0.5; */
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
