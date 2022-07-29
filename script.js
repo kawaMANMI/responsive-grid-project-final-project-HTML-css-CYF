@@ -1,3 +1,7 @@
-function buttonbackground(btn) {
-  console.log(btn.id);
+function onClickMenu() {
+  document.getElementById("menu").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+  console.log("kawa");
 }
