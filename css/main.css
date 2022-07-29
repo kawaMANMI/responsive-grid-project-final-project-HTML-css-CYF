@@ -113,6 +113,7 @@ header h1 {
   /*left: 10%; */
   font-size: 3em;
   font-weight: 700;
+  font-family: "Poppins", sans-serif;
 }
 
 .main-front {
@@ -123,13 +124,29 @@ header h1 {
   position: absolute;
   margin-top: -25vh;
   margin-left: 2em;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   /* opacity: 0.5; */
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: center;
+  border: 2px solid blue;
+  flex-direction: column;
+}
+
+.main-front img {
+  width: 50%;
+  border-radius: 50%;
+  align-self: start;
+  margin-top: 2em;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-front h1 {
+  font-size: 2em;
+  width: 30%;
+  text-align: center;
+  border: 2px solid red;
+  float: right;
 }
